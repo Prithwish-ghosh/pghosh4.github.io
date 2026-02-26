@@ -1,1 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prithwish Ghosh | Research</title>
+  <style>
+    :root { --max: 980px; --pad: 18px; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height:1.6; color:#111; background:#fff; }
+    a { color:#0b57d0; text-decoration:none; } a:hover { text-decoration:underline; }
+    header { border-bottom:1px solid #eee; background:#fafafa; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 22px var(--pad); }
+    nav { margin-top: 10px; display:flex; gap:14px; flex-wrap:wrap; font-size: 14px; }
+    nav a { padding: 6px 10px; border-radius: 999px; }
+    nav a.active { background:#111; color:#fff; }
+    section { padding: 18px 0; border-bottom: 1px solid #f0f0f0; }
+    h1 { margin: 0; font-size: 26px; }
+    h2 { margin: 0 0 10px; font-size: 20px; }
+    .card { border:1px solid #eee; border-radius:14px; padding:14px; background:#fff; margin-top:12px; }
+    .muted { color:#555; }
+    footer { padding: 22px 0; color:#666; font-size: 13px; }
+  </style>
+</head>
 
+<body>
+<header>
+  <div class="wrap">
+    <h1>Research</h1>
+    <div class="muted">Methods, projects, and publications</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a class="active" href="research.html">Research</a>
+      <a href="teaching.html">Teaching &amp; Experiences</a>
+      <a href="conference.html">Conference / Posters</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Bayesian modeling & computation</li>
+      <li>Directional statistics and spherical data analysis</li>
+      <li>Astrostatistics (GRBs, celestial impact directions, related)</li>
+      <li>Spatio-temporal methods</li>
+      <li>MCMC methodology</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Ongoing Projects</h2>
+
+    <div class="card">
+      <strong>Automated Sliced Gibbs (ASG) sampling</strong>
+      <div class="muted">Fully automated MCMC for arbitrary kernels</div>
+      <ul>
+        <li>Effective support estimation + slice-driven Gibbs updates</li>
+        <li>Targets: multimodal, heavy-tailed, irregular densities</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <strong>MOCA: Modal Classification Algorithm</strong>
+      <div class="muted">Bayesian classification (collaborative project)</div>
+      <ul>
+        <li>Mode-aware decision rules and uncertainty quantification</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <strong>Directional models for celestial object falls / impacts</strong>
+      <div class="muted">Directional inference + astro applications</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Selected Publications</h2>
+    <p>
+      Full list:
+      <a href="https://ci.lib.ncsu.edu/profiles/pghosh4" target="_blank" rel="noopener">NCSU publications page</a>
+    </p>
+    <ul>
+      <li>Whisperers of whales wander (Journal for Nature Conservation, 2025)</li>
+      <li>Directional nature of fall of celestial objects on Venus (Planetary and Space Science, 2025)</li>
+      <li>Flexible spherical mixture model for GRB patterns (PASP, 2025)</li>
+      <li>Comparative study: Euclidean vs spherical clustering for BATSE GRB (MNRAS, 2025)</li>
+      <li>Directional nature of celestial object’s fall on Earth (MNRAS, 2024)</li>
+    </ul>
+    <p class="muted">Tip: add DOI links next to each item once you want them clickable.</p>
+  </section>
+</main>
+
+<footer class="wrap">
+  <div>© <span id="year"></span> Prithwish Ghosh</div>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

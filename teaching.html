@@ -1,1 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prithwish Ghosh | Teaching & Experiences</title>
+  <style>
+    :root { --max: 980px; --pad: 18px; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height:1.6; color:#111; background:#fff; }
+    a { color:#0b57d0; text-decoration:none; } a:hover { text-decoration:underline; }
+    header { border-bottom:1px solid #eee; background:#fafafa; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 22px var(--pad); }
+    nav { margin-top: 10px; display:flex; gap:14px; flex-wrap:wrap; font-size: 14px; }
+    nav a { padding: 6px 10px; border-radius: 999px; }
+    nav a.active { background:#111; color:#fff; }
+    section { padding: 18px 0; border-bottom: 1px solid #f0f0f0; }
+    h1 { margin: 0; font-size: 26px; }
+    h2 { margin: 0 0 10px; font-size: 20px; }
+    .card { border:1px solid #eee; border-radius:14px; padding:14px; background:#fff; margin-top:12px; }
+    .muted { color:#555; }
+    footer { padding: 22px 0; color:#666; font-size: 13px; }
+  </style>
+</head>
 
+<body>
+<header>
+  <div class="wrap">
+    <h1>Teaching & Other Experiences</h1>
+    <div class="muted">TA • Instructor • RA • Internship</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a class="active" href="teaching.html">Teaching &amp; Experiences</a>
+      <a href="conference.html">Conference / Posters</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>Teaching Assistant (NC State University)</h2>
+    <div class="card">
+      <ul>
+        <li>ST 421 (Fall 2024, 2025)</li>
+        <li>ST 350 (Summer 2025)</li>
+        <li>ST 422 (Spring 2025)</li>
+        <li>ST 518 (Fall 2025)</li>
+        <li>ST 502 (Spring 2026)</li>
+      </ul>
+      <div class="muted">Typical duties: office hours, grading, proctoring, student support.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Visiting Professor (Sister Nivedita University)</h2>
+    <div class="card">
+      <div><strong>Jan 2024 – Jun 2024</strong></div>
+      <ul>
+        <li>Statistical Computing with R (BSc Sem 6)</li>
+        <li>Regression Analysis (MSc Sem 2)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Research Assistant (NC State University)</h2>
+    <div class="card">
+      <div><strong>May 2025 – Aug 2025</strong> <span class="muted">(NIH-funded)</span></div>
+      <ul>
+        <li>Research support and statistical computing</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Internship</h2>
+    <div class="card">
+      <div><strong>Ministry of Statistics, Government of India</strong></div>
+      <div class="muted">Jun 2023 – Jul 2023 • Data Processing Division HQ, Mahalanobis Bhavan, Kolkata</div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <div>© <span id="year"></span> Prithwish Ghosh</div>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

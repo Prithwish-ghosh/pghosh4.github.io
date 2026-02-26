@@ -1,21 +1,48 @@
+/* Modern Academic Theme */
+
 body {
-    font-family: "Georgia", serif;
-    background-color: #111;
-    color: #e5e5e5;
-    line-height: 1.8;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+                 "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.7;
+    font-size: 16px;
+    background-color: #fafafa;
+    color: #222;
     max-width: 900px;
     margin: 0 auto;
     padding: 40px 20px;
 }
 
 h1, h2, h3 {
-    color: #ffffff;
+    font-weight: 600;
+    color: #111;
+}
+
+h2 {
+    margin-top: 40px;
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 6px;
 }
 
 a {
-    color: #4da6ff;
+    color: #b00000;  /* NC State red accent */
+    text-decoration: none;
+    transition: 0.2s ease;
 }
 
 a:hover {
-    color: #80c1ff;
+    color: #7a0000;
+    text-decoration: underline;
+}
+
+nav a {
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+footer {
+    margin-top: 60px;
+    font-size: 14px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 15px;
 }

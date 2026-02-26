@@ -3,32 +3,28 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Prithwish Ghosh | Statistics PhD (NC State)</title>
-  <meta name="description" content="Prithwish Ghosh — PhD student in Statistics at NC State University. Research: Bayesian modeling, directional statistics, astrostatistics, MCMC." />
-
+  <title>Prithwish Ghosh | Home</title>
   <style>
     :root { --max: 980px; --pad: 18px; }
-    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height:1.55; color:#111; background:#fff; }
-    a { color:#0b57d0; text-decoration:none; }
-    a:hover { text-decoration:underline; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height:1.6; color:#111; background:#fff; }
+    a { color:#0b57d0; text-decoration:none; } a:hover { text-decoration:underline; }
     header { border-bottom:1px solid #eee; background:#fafafa; }
     .wrap { max-width: var(--max); margin: 0 auto; padding: 22px var(--pad); }
-    .top { display:flex; gap:18px; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; }
+    .top { display:flex; gap:18px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+    .profile { display:flex; gap:16px; align-items:center; }
+    .avatar { width:96px; height:96px; border-radius:999px; object-fit:cover; border:1px solid #e6e6e6; background:#fff; }
     .name { font-size: 30px; font-weight: 800; margin: 0; letter-spacing: .2px; }
     .tag { margin: 6px 0 0; color:#333; }
-    .chips { display:flex; flex-wrap:wrap; gap:10px; margin-top: 10px; }
-    .chip { display:inline-block; padding:6px 10px; border:1px solid #e6e6e6; border-radius:999px; background:#fff; font-size: 13px; color:#222; }
-    nav { margin-top: 14px; display:flex; gap:14px; flex-wrap:wrap; font-size: 14px; }
+    nav { margin-top: 12px; display:flex; gap:14px; flex-wrap:wrap; font-size: 14px; }
+    nav a { padding: 6px 10px; border-radius: 999px; }
+    nav a.active { background:#111; color:#fff; }
     section { padding: 18px 0; border-bottom: 1px solid #f0f0f0; }
     h2 { margin: 0 0 10px; font-size: 20px; }
     ul { margin: 8px 0 0 18px; }
-    .grid { display:grid; gap: 14px; grid-template-columns: 1fr; }
-    @media (min-width: 860px){ .grid { grid-template-columns: 1fr 1fr; } }
-    .card { border:1px solid #eee; border-radius: 14px; padding: 14px; background:#fff; }
-    .muted { color:#555; }
+    .chips { display:flex; flex-wrap:wrap; gap:10px; margin-top: 10px; }
+    .chip { display:inline-block; padding:6px 10px; border:1px solid #e6e6e6; border-radius:999px; background:#fff; font-size: 13px; color:#222; }
     .small { font-size: 13px; color:#555; }
     footer { padding: 22px 0; color:#666; font-size: 13px; }
-    code { background:#f6f6f6; padding:2px 6px; border-radius:6px; }
   </style>
 </head>
 
@@ -36,135 +32,71 @@
 <header>
   <div class="wrap">
     <div class="top">
-      <div>
-        <h1 class="name">Prithwish Ghosh</h1>
-        <p class="tag">PhD Student in Statistics, North Carolina State University (Raleigh, NC)</p>
+      <div class="profile">
+        <img class="avatar" src="assets/profile.jpg" alt="Profile photo">
+        <div>
+          <h1 class="name">Prithwish Ghosh</h1>
+          <p class="tag">PhD Student in Statistics, North Carolina State University (Raleigh, NC)</p>
 
-        <div class="chips">
-          <span class="chip">Bayesian Modeling</span>
-          <span class="chip">Directional Statistics</span>
-          <span class="chip">Astrostatistics</span>
-          <span class="chip">MCMC</span>
-          <span class="chip">Spatio-temporal Analysis</span>
-          <span class="chip">Functional Data Analysis</span>
+          <div class="chips">
+            <span class="chip">Bayesian Modeling</span>
+            <span class="chip">Directional Statistics</span>
+            <span class="chip">Astrostatistics</span>
+            <span class="chip">MCMC</span>
+            <span class="chip">Spatio-temporal Analysis</span>
+          </div>
+
+          <nav>
+            <a class="active" href="index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="teaching.html">Teaching &amp; Experiences</a>
+            <a href="conference.html">Conference / Posters</a>
+          </nav>
+
+          <p class="small">
+            Contact:
+            <a href="mailto:pghosh4@ncsu.edu">pghosh4@ncsu.edu</a> •
+            <a href="mailto:ghosh.prithwish1999@gmail.com">ghosh.prithwish1999@gmail.com</a> •
+            <a href="https://orcid.org/0000-0001-7747-5045" target="_blank" rel="noopener">ORCID</a>
+          </p>
         </div>
-
-        <nav>
-          <!-- TODO: update these links to your real profiles -->
-          <a href="mailto:pghosh4@ncsu.edu">Email (NCSU)</a>
-          <a href="mailto:ghosh.prithwish1999@gmail.com">Email (Personal)</a>
-          <a href="https://orcid.org/0000-0001-7747-5045" target="_blank" rel="noopener">ORCID</a>
-          <a href="#" target="_blank" rel="noopener">Google Scholar</a>
-          <a href="https://ci.lib.ncsu.edu/profiles/pghosh4" target="_blank" rel="noopener">Publications (NCSU)</a>
-          <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener">GitHub</a>
-        </nav>
-
-        <p class="small">
-          <!-- Optional privacy note -->
-          Tip: I did not put your home address/phone on the public site by default. Add them only if you really want them public.
-        </p>
       </div>
     </div>
   </div>
 </header>
 
 <main class="wrap">
-
-  <section id="about">
+  <section>
     <h2>About</h2>
     <p>
       I am a PhD student in the Department of Statistics at North Carolina State University (2024–present),
-      supervised by Dr. Sujit K. Ghosh. My interests include spatio-temporal analysis, Bayesian classification/modeling,
+      supervised by Dr. Sujit K. Ghosh. My research interests include spatio-temporal analysis, Bayesian classification/modeling,
       directional statistics, astrostatistics, and MCMC methods.
     </p>
   </section>
 
-  <section id="education">
+  <section>
     <h2>Education</h2>
     <ul>
-      <li><strong>PhD in Statistics</strong>, North Carolina State University, USA (2024–present) — Supervisor: Dr. Sujit K. Ghosh</li>
-      <li><strong>M.Sc. in Statistics</strong>, Visva Bharati University, India (2021–2023) — Supervisor: Dr. Debashis Chatterjee</li>
-      <li><strong>B.Sc. (Hons) in Statistics</strong>, Sister Nivedita University, India (2018–2021) — Supervisor: Dr. Satyabrata Pal</li>
+      <li><strong>PhD in Statistics</strong>, NC State University, USA (2024–present)</li>
+      <li><strong>M.Sc. in Statistics</strong>, Visva Bharati University, India (2021–2023)</li>
+      <li><strong>B.Sc. (Hons) in Statistics</strong>, Sister Nivedita University, India (2018–2021)</li>
     </ul>
   </section>
 
-  <section id="experience">
-    <h2>Experience</h2>
-
-    <div class="grid">
-      <div class="card">
-        <strong>Teaching Assistant</strong> — Department of Statistics, NC State University
-        <div class="muted">Aug 2024 – Present</div>
-        <ul>
-          <li>ST 421 (Fall 2024, 2025)</li>
-          <li>ST 350 (Summer 2025)</li>
-          <li>ST 422 (Spring 2025)</li>
-          <li>ST 518 (Fall 2025)</li>
-          <li>ST 502 (Spring 2026)</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <strong>Research Assistant</strong> — Department of Statistics, NC State University
-        <div class="muted">May 2025 – Aug 2025</div>
-        <div class="small">Grant: NIH</div>
-      </div>
-
-      <div class="card">
-        <strong>Visiting Professor</strong> — Sister Nivedita University
-        <div class="muted">Jan 2024 – Jun 2024</div>
-        <ul>
-          <li>Statistical Computing with R (BSc Sem 6)</li>
-          <li>Regression Analysis (MSc Sem 2)</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <strong>Summer Internship</strong> — Ministry of Statistics, Government of India
-        <div class="muted">Jun 2023 – Jul 2023</div>
-        <div class="small">Data Processing Division HQ, Mahalanobis Bhavan, Kolkata</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="publications">
-    <h2>Selected Publications (2024–2025)</h2>
-    <p class="small">Full list: <a href="https://ci.lib.ncsu.edu/profiles/pghosh4" target="_blank" rel="noopener">NCSU profile page</a></p>
-    <ol>
-      <li>Whisperers of whales wander: directional statistical investigation of whale migration (Journal for Nature Conservation, 2025)</li>
-      <li>Directional nature of fall of celestial objects on Venus (Planetary and Space Science, 2025)</li>
-      <li>Flexible spherical mixture model for GRB patterns (PASP, 2025)</li>
-      <li>Comparative study of Euclidean and spherical clustering for BATSE GRB (MNRAS, 2025)</li>
-      <li>Directional nature of celestial object’s fall on Earth (MNRAS, 2024)</li>
-    </ol>
-    <p class="small">
-      (This section is adapted from your CV; you can expand it with DOIs/links.) 
-    </p>
-  </section>
-
-  <section id="ongoing">
-    <h2>Ongoing Work</h2>
+  <section>
+    <h2>Quick Links</h2>
     <ul>
-      <li>Automated Sliced Gibbs sampling for arbitrary kernels (with Dr. Sujit K. Ghosh)</li>
-      <li>MOCA: A Modal Classification Algorithm (with Dr. Sujit K. Ghosh &amp; collaborators)</li>
-      <li>Composite likelihood change-point detection for angular/linear spatio-temporal processes</li>
-      <li>FDA models for astronomy</li>
+      <li><a href="research.html">Research</a> — projects, methods, collaborations</li>
+      <li><a href="teaching.html">Teaching &amp; Experiences</a> — TA/Instructor/RA and other roles</li>
+      <li><a href="conference.html">Conference / Posters</a> — talks, posters, upcoming</li>
     </ul>
+    <p class="small">Tip: Add your CV PDF as <code>cv.pdf</code> in the repo and link it here.</p>
   </section>
-
-  <section id="service">
-    <h2>Service & Memberships</h2>
-    <ul>
-      <li>Reviewer: Statistics in Biosciences; Nature Scientific Reports; Ecological Informatics; others</li>
-      <li>Member: IMS, ASA, ISBA, RSS, AMS, Astrostatistics Interest Group (ASA), Sigma Xi</li>
-      <li>Treasurer: Triangle Bengali Association (Mar 2025–present)</li>
-    </ul>
-  </section>
-
 </main>
 
 <footer class="wrap">
-  <div>© <span id="year"></span> Prithwish Ghosh • Built with GitHub Pages</div>
+  <div>© <span id="year"></span> Prithwish Ghosh • GitHub Pages</div>
 </footer>
 
 <script>

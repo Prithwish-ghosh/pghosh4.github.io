@@ -1,3 +1,177 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prithwish Ghosh</title>
+
+  <style>
+    :root {
+      --red: #b00000;
+      --black: #111111;
+      --light: #f4f4f4;
+      --border: #e6e6e6;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, sans-serif;
+      background-color: #ffffff;
+      color: var(--black);
+      line-height: 1.7;
+    }
+
+    /* Dark overlay for readability */
+    header {
+      position: relative;
+      width: 100%;
+      height: 320px;
+      background: url("assets/APOD-1024x771.jpg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      padding: 40px 60px;
+      color: white;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.6),
+          rgba(176, 0, 0, 0.5)
+      );
+      z-index: 1;
+    }
+
+    header .wrap {
+      position: relative;
+      z-index: 2;
+    }
+
+    .header-inner {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+    }
+
+    .name {
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+
+    .tag {
+      margin-top: 6px;
+      opacity: 0.95;
+      font-size: 16px;
+    }
+
+    /* ===== NAV ===== */
+    nav {
+      margin-top: 20px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.4);
+      transition: 0.3s ease;
+      backdrop-filter: blur(3px);
+    }
+
+    nav a:hover {
+      background: white;
+      color: var(--red);
+    }
+
+    nav a.active {
+      background: white;
+      color: var(--black);
+      font-weight: 600;
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    main {
+      padding: 50px 70px;
+    }
+
+    section {
+      padding: 30px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      color: var(--red);
+      margin-bottom: 14px;
+      font-size: 22px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--black);
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      header {
+        height: auto;
+        padding: 40px 25px;
+      }
+
+      main {
+        padding: 30px 20px;
+      }
+
+      footer {
+        padding: 18px 20px;
+      }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
 <section id="asg-comparison">
 
 <h1 id="asg-automated-sliced-gibbs-sampler-stress-test-suite">ASG:
